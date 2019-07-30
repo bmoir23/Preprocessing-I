@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>My Resume</title>
+
+  <link href="/fontawesome-free-5.10.0-web/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="https://bmoir23.github.io/portfolio-website/#">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                       
+            </ul>
+        </nav>
+    </header>
+</body>
+<section class="contact">
+  <form action="/my-handling-form-page" method="post">
+    <div>
+      <label for="name">Name:</label> <input type="text" id="name" name="user_name">
+    </div>
+    <div>
+      <label for="mail">E-mail:</label> <input type="email" id="mail" name="user_mail">
+    </div>
+    <div>
+      <label for="msg">Message:</label> <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div class="button">
+      <button type="submit">Send your message</button>
+    </div>
+  </form>
+</section>
