@@ -50,24 +50,30 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
+	
     box-sizing: border-box;
 }
+
+@color:#ccc;/*variable*/
 
 html, body {
 	height: 100%;
 	width:100%;
+	margin:0 auto;
 }
-.main-content{
+.main-content{/*nested*/
 	display: flex;
 	width:100%;
 	flex-direction: row;
 	padding:20px;
-	background-color: #ccc;
+	background-color: @color;
 
 	.about{
 		display: flex;
+		flex-direction: column;
 		border: 1px solid black;
-		position: 1;
+		align-content: center;
+		justify-content: flex-end;
 		
 	}
 
@@ -88,28 +94,82 @@ body {
 }
 
 
-nav {
-    height: 48px;
-}
+nav {/*nested*/
+	height: 48px;
+	padding: 10px;
 
-nav ul {
+
+ 	ul {
     padding: 0;
     display: flex;
     justify-content: space-between;
     list-style-type: none;
 }
-nav li a {
+ 	li a {
     font-family: ;
-    color: grey;
+    color: @color;
     font-size: 16px;
-    text-decoration: none;
+	text-decoration: none;
+	/* variable*/
     
 }
 
-nav li a:hover {
+	li a:hover {
     color: #dd5771;
 }
+}
+.skills{
+	display: flex;
+	border: 1px soild black;
+	width:100%;
+	margin: 0 auto;
+	
+	p{
+		font-weight: bold;
+	}
+	.icon-work{
+		display:flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	a:hover{
+		color: red;
+	
+	}
 
+}
+.bottom{
+	display:flex;
+	border: 1px solid black;
+	background-color: @color;
+	/* variable */
+	align-items: center;
+	padding:20px;
+	margin: 0 auto;
+}
 
+.work-table{ /*nested*/
+	display:flex;
+	justify-content: center;
+	padding: 20px;
 
+	.table{
+		width:100%;
+	}
+	th{
+		height:50px;
+	}
 
+	.table, th, td{
+		background-color:@color;
+		/*variable*/
+		border: 1px solid black;
+		padding: 5px;
+	}
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	padding:10px;
+}
