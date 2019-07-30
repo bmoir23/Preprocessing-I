@@ -135,3 +135,19 @@ body {
   height: 100%;
   width: 100%;
 }
+.main-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.main-content .nav a {
+  align-items: center;
+  flex-direction: row;
+}
+.main-content .about {
+  border: 1px solid black;
+}
+.main-content .img {
+  width: 25%;
+  height: 25%;
+}
