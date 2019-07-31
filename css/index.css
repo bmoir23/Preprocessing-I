@@ -296,6 +296,7 @@ form {
   padding: 1em;
   border: 1px solid #ccc;
   border-radius: 1em;
+  background-color: #ccc;
 }
 form div {
   margin-top: 1em;
