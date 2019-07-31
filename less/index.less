@@ -69,7 +69,7 @@ table {
 	background-color: @color;
 	padding: 30px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 1em;
   
   }
  
@@ -81,8 +81,10 @@ table {
 		.icon-work{
 			display:flex;
 			flex-direction: row;
-			justify-content: center;
+			justify-content: space-around;
+
 			}
+
 		.icon-work a:hover{
 			color: @hover-color;
 		}	
@@ -165,13 +167,13 @@ body {
 
 nav {/*nested*/
 	height: 48px;
-	padding: 10px;
+	padding: 20px;
 
 
  	ul {
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
  	li a {
@@ -195,6 +197,7 @@ nav {/*nested*/
 	padding: 20px;
 
 	h2{
+		display:flex;
 		align-content: center;
 	}
 
@@ -219,7 +222,7 @@ footer{
 	padding:10px;
 }
 
-/* contant page*/
+/* contact page*/
 
 form {
 	margin: 0 auto;

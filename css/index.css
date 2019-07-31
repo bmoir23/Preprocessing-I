@@ -138,7 +138,7 @@ body {
   background-color: #ccc;
   padding: 30px;
   text-align: center;
-  font-size: 12px;
+  font-size: 1em;
 }
 .row {
   display: -webkit-flex;
@@ -148,7 +148,7 @@ body {
 .row .icon-work {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 .row .icon-work a:hover {
   color: #ed3330;
@@ -196,6 +196,7 @@ body {
   margin: 0 auto;
 }
 .example_a h2 {
+  display: flex;
   align-content: center;
 }
 .example_a .table {
@@ -231,12 +232,12 @@ body {
 nav {
   /*nested*/
   height: 48px;
-  padding: 10px;
+  padding: 20px;
 }
 nav ul {
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
 }
 nav li a {
@@ -256,6 +257,7 @@ nav li a:hover {
   padding: 20px;
 }
 .work-table h2 {
+  display: flex;
   align-content: center;
 }
 .work-table .table {
@@ -277,7 +279,7 @@ footer {
   justify-content: center;
   padding: 10px;
 }
-/* contant page*/
+/* contact page*/
 form {
   margin: 0 auto;
   width: 400px;
