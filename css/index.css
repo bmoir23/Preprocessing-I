@@ -134,6 +134,7 @@ table {
 body {
   font-family: Arial, Helvetica, sans-serif;
   width: 98%;
+  padding: 1em;
   margin: 0 auto;
 }
 .header {
@@ -158,6 +159,7 @@ body {
 .column {
   padding: 10px;
   height: 98%;
+  display: flex;
 }
 .column.side {
   -webkit-flex: 1;
@@ -183,7 +185,7 @@ body {
     flex-direction: column-reverse;
   }
 }
-.example_a {
+.button {
   background-color: #ccc;
   padding: 30px;
   text-align: center;
@@ -192,7 +194,7 @@ body {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  background: grey;
+  background: #708090;
   border-radius: 5px;
   /*nested*/
   display: flex;
@@ -205,25 +207,25 @@ body {
   transition: all 0.4s ease 0s;
   margin: 0 auto;
 }
-.example_a h2 {
+.button h2 {
   display: flex;
   align-content: center;
 }
-.example_a .table {
+.button .table {
   width: 100%;
 }
-.example_a th {
+.button th {
   height: 50px;
 }
-.example_a .table,
-.example_a th,
-.example_a td {
+.button .table,
+.button th,
+.button td {
   background-color: #ccc;
   /*variable*/
   border: 1px solid black;
   padding: 5px;
 }
-.example_a:hover {
+.button:hover {
   background: #ed3330;
   letter-spacing: 1px;
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
@@ -251,7 +253,7 @@ nav ul {
   list-style-type: none;
 }
 nav li a {
-  color: #ccc;
+  color: #708090;
   font-size: 16px;
   text-decoration: none;
   /* variable*/

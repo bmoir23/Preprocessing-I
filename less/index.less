@@ -57,12 +57,14 @@ table {
 
 @color:#ccc;/*variable*/
 @hover-color: #ed3330;
+@button-color:#708090;
 
 
   
   body {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 98%;
+	padding:1em;
 	margin: 0 auto;
   }
   
@@ -79,6 +81,7 @@ table {
 		display: -webkit-flex;
 		display: flex;
 		flex-direction: column;
+		
    
 		.icon-work{
 			display:flex;
@@ -90,11 +93,14 @@ table {
 		.icon-work a:hover{
 			color: @hover-color;
 		}	
+		
 }
 
   	.column {
 		padding: 10px;
 		height: 98%; 
+		display:flex;
+	
  	 }
 
 
@@ -131,14 +137,14 @@ table {
 
 
 
-.example_a {
+.button{
 	.header();
 	/*display:flex;*/
 	justify-content: center;
 	color: #fff;
 	text-transform: uppercase;
 	text-decoration: none;
-	background: grey;
+	background: @button-color;
 	border-radius: 5px;
 	.work-table(); /* mixin*/
 	width: 50%;
@@ -147,7 +153,7 @@ table {
 	margin:0 auto;
 	
 }
-	.example_a:hover {
+	.button:hover {
 		background: @hover-color;
 		letter-spacing: 1px;
 		-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
@@ -184,7 +190,7 @@ nav {/*nested*/
 }
  	li a {
     
-    color: @color;
+    color: @button-color;
     font-size: 16px;
 	text-decoration: none;
 	/* variable*/
