@@ -1,1 +1,327 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+/*variable*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 98%;
+  padding: 1em;
+  margin: 0 auto;
+}
+.header {
+  background-color: #ccc;
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+}
+.row {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+}
+.row .icon-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.row .icon-work a:hover {
+  color: #ed3330;
+}
+.column {
+  padding: 10px;
+  height: 98%;
+  display: flex;
+}
+.column.side {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.column.middle {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  /*-webkit-flex: 2;
+		-ms-flex: 2;
+		flex: 2;*/
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+.button {
+  background-color: #ccc;
+  padding: 30px;
+  text-align: center;
+  font-size: 1em;
+  /*display:flex;*/
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #708090;
+  border-radius: 5px;
+  /*nested*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  /* mixin*/
+  width: 50%;
+  border: none;
+  transition: all 0.4s ease 0s;
+  margin: 0 auto;
+}
+.button h2 {
+  display: flex;
+  align-content: center;
+}
+.button .table {
+  width: 100%;
+}
+.button th {
+  height: 50px;
+}
+.button .table,
+.button th,
+.button td {
+  background-color: #ccc;
+  /*variable*/
+  border: 1px solid black;
+  padding: 5px;
+}
+.button:hover {
+  background: #ed3330;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+#page_wrapper {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+body {
+  margin-bottom: 60px;
+}
+nav {
+  /*nested*/
+  height: 48px;
+  padding: 20px;
+}
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+nav li a {
+  color: #708090;
+  font-size: 16px;
+  text-decoration: none;
+  /* variable*/
+}
+nav li a:hover {
+  color: #ed3330;
+}
+.work-table {
+  /*nested*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.work-table h2 {
+  display: flex;
+  align-content: center;
+}
+.work-table .table {
+  width: 100%;
+}
+.work-table th {
+  height: 50px;
+}
+.work-table .table,
+.work-table th,
+.work-table td {
+  background-color: #ccc;
+  /*variable*/
+  border: 1px solid black;
+  padding: 5px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+/* contact page*/
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background-color: #ccc;
+}
+form div {
+  margin-top: 1em;
+}
+form label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+form input,
+form textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+form input:focus,
+form textarea:focus {
+  border-color: #000;
+}
+form textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
